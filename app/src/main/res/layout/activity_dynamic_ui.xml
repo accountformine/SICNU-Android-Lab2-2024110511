@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".controller.DynamicUiActivity">
+
+    <!-- Zone 1: Pure-code Dynamic TextView adding with ScrollView -->
+    <LinearLayout
+        android:id="@+id/layoutZone1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/zone1_bg"
+        android:orientation="vertical">
+
+        <!-- Top Centered Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <Button
+                android:id="@+id/btnAddTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/zone_btn_bg"
+                android:text="@string/btn_add_textview"
+                android:textColor="@color/zone_btn_text"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Scrollable container for dynamic TextViews -->
+        <ScrollView
+            android:id="@+id/scrollViewZone1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <LinearLayout
+                android:id="@+id/containerDynamicViews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- Zone 2: Kotlin MVC ProgramAdviser -->
+    <LinearLayout
+        android:id="@+id/layoutZone2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/zone2_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Spinner
+            android:id="@+id/spinnerLanguages"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/programming_categories" />
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/zone_btn_bg"
+            android:text="@string/btn_confirm"
+            android:textColor="@color/zone_btn_text" />
+
+        <TextView
+            android:id="@+id/tvAdviserResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/default_adviser_result"
+            android:textColor="#000000"
+            android:textSize="36sp" />
+    </LinearLayout>
+
+</LinearLayout>

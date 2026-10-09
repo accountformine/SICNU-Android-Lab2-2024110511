@@ -1,0 +1,54 @@
+<resources>
+    <!-- App & Activity Titles (APP应用标题为自己的“姓名+学号”) -->
+    <string name="app_name">郭翔宇2024110511</string>
+    <string name="title_calculator">郭翔宇2024110511</string>
+    <string name="title_dynamic_ui">UI Code and MVC</string>
+    
+    <!-- Menu / Navigation -->
+    <string name="action_open_dynamic_ui">UI控件生成与MVC推荐器</string>
+    <string name="action_open_calc">返回计算器</string>
+    
+    <!-- Calculator Buttons -->
+    <string name="calc_btn_clear">C</string>
+    <string name="calc_btn_del">DEL</string>
+    <string name="calc_btn_percent">%</string>
+    <string name="calc_btn_divide">÷</string>
+    <string name="calc_btn_multiply">×</string>
+    <string name="calc_btn_minus">−</string>
+    <string name="calc_btn_plus">+</string>
+    <string name="calc_btn_equal">=</string>
+    <string name="calc_btn_dot">.</string>
+    <string name="calc_btn_negate">±</string>
+    
+    <string name="calc_btn_0">0</string>
+    <string name="calc_btn_1">1</string>
+    <string name="calc_btn_2">2</string>
+    <string name="calc_btn_3">3</string>
+    <string name="calc_btn_4">4</string>
+    <string name="calc_btn_5">5</string>
+    <string name="calc_btn_6">6</string>
+    <string name="calc_btn_7">7</string>
+    <string name="calc_btn_8">8</string>
+    <string name="calc_btn_9">9</string>
+    
+    <!-- Calculator Display & Messages -->
+    <string name="calc_default_expr"></string>
+    <string name="calc_default_result">0</string>
+    <string name="calc_error_div_zero">错误：除数不能为0</string>
+    <string name="calc_error_syntax">表达式格式有误</string>
+    
+    <!-- Dynamic UI Strings -->
+    <string name="btn_add_textview">ADD TEXTVIEW</string>
+    <string name="btn_confirm">确定</string>
+    <string name="dynamic_tv_template">This is a new textView:%1$d</string>
+    <string name="default_adviser_result">kotlin</string>
+    
+    <!-- Program Adviser Categories -->
+    <string-array name="programming_categories">
+        <item>新语言</item>
+        <item>面向对象语言</item>
+        <item>脚本语言</item>
+        <item>移动端与多平台</item>
+        <item>系统级编程语言</item>
+    </string-array>
+</resources>
